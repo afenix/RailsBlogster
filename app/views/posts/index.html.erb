@@ -1,0 +1,21 @@
+<span class="success"><%= flash[:notice] %></span>
+<span class="fail"><%= flash[:alert] %></span>
+
+<h1>Welcome to Blogster!</h1>
+
+<% if @posts.any? %>
+<h4>Here are your current blog posts:</h4>
+  <% @posts.each do |post| %>
+    <ul>
+      <li><%= post.title %></li>
+        <ul>
+           <li><%= post.body %></li>
+        </ul>  
+    </ul>
+  <% end %>
+<% end %>
+
+
+<br />
+
+<%= link_to "Add Post", new_post_path, :class => "btn btn-success" %>

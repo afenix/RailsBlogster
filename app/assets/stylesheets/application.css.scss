@@ -1,17 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "_bootswatch.scss";
-.navatar {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-}
-.avatar {
-  width: 100px;
-  height: relative;
-  border-radius: 30%;
-}
+@import "styles";
 
-#email {
-  font-size: 2em;
-}
+ 
+
