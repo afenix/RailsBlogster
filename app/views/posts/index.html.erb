@@ -7,9 +7,9 @@
 <h4>Here are your current blog posts:</h4>
   <% @posts.each do |post| %>
     <ul>
-      <li><%= link_to post.title, post_path(post) %> -Click to view post</li>
+      <li><%= link_to post.title, post_path(post) %></li>
         <ul>
-           <li><%= post.body %></li>
+           <li><%= truncate(post.body, :length => 80) %></li>
         </ul>  
     </ul>
   <% end %>
