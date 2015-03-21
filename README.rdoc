@@ -1,27 +1,27 @@
-# Blogster App
+= Blogster App
 A simple ruby on rails blogging app. Allows a user to add blog posts and for others to comment on those posts.
-## Setup Instructions:
-```
-Run Postrges Sever
 
-Clone or download this repository and cd into blogster directory
+== Deployment Instructions:
 
-“` $ rake db:create $ rake db:migrate $ rails server “`
+* Run Postrges Sever
 
-In your browser visit localhost:3000
+* Clone or download this repository and cd into blogster directory
 
+<tt> $ rake db:create $ rake db:migrate $ rails server</tt>
 
-```
+* In your browser visit localhost:3000
 
-### Motivation 
-```
+== Motivation 
 To practice building an application using Ruby on Rails, Active Record, and testing with Rspec and Capybara.
 
-### Bug Reports:
-```
+== Bug Reports:
+
 There are none known at this time. Please do contact the author if you uncover any vermin hanging out in the code : a.fenix@icloud.com
-```
-### Author:
-Alister A. Fenix, 2015.
-#### License
+
+== Author:
+<em>Alister A. Fenix, 2015.</em>
+
+== License
 Free and OS License. Code for the people by the people.
+
+
