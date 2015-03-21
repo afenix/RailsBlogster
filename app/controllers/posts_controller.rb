@@ -11,10 +11,10 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
       if @post.save
         flash[:notice] = "Blog post created successfully!"
-        redirect_to "/"
+        redirect_to posts_path(@post)
       else
         flash[:alert] = "There was a problem.  Please try again."
-        redirect_to :back
+        redirect_to '/'
       end
   end
 

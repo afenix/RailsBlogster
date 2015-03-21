@@ -8,7 +8,7 @@ describe "the add a blog process" do
     fill_in "Author", :with => "Virginia Woolf"
     fill_in "Body", :with => "Language is wine upon the lips"
     click_on "Create Post"
-    expect(posts_path).to have_content 'Posts'
+    expect(posts_path).to have_content 'posts'
   end
   
 end
