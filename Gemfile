@@ -9,6 +9,11 @@ gem 'turbolinks'
 gem 'bootstrap-sass', '~> 3.3.4'
 gem 'sass-rails', '>= 3.2'
 gem 'bcrypt-ruby', '~> 3.1.5', require: "bcrypt"
+gem 'twitter-bootstrap-rails'
+gem 'bootstrap_form'
+gem 'bootstrap'
+gem "therubyracer"
+gem "less-rails"
 
 group :development do
   gem 'byebug'

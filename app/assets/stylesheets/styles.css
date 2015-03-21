@@ -20,9 +20,11 @@ li {
 .success {
   background-color: #6B8E23;
   display: block;
+  color: white;
 }
 
 .fail {
   background-color: #FF6347;
   display: block;
+  color: white;
 }
