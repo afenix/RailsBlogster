@@ -11,7 +11,7 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
       if @post.save
         flash[:notice] = "Blog post created successfully!"
-        redirect_to posts_path(@post)
+    redirect_to posts_path(@post)
       else
         flash[:alert] = "There was a problem.  Please try again."
         redirect_to '/'
@@ -29,7 +29,7 @@ class PostsController < ApplicationController
   def update
     @post = Post.find(params[:id])
     if @post.update(post_params)
-      flash[:notice] = "Your post was successfully updated!"
+      flash[:notice] = "Post was successfully updated!"
       redirect_to posts_path
     else
       render :edit
