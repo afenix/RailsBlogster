@@ -1,12 +1,14 @@
 h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Righteous', sans-serif;
+  font-size: 300%;
   text-align: center;
+  color: #DB6C27;
 }
 
 
 h2,
 h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Righteous', sans-serif;
 }
 
 body{
@@ -33,3 +35,5 @@ li {
   display: block;
   color: white;
 }
+
+
