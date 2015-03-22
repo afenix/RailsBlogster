@@ -16,7 +16,7 @@ To practice building an application using Ruby on Rails, Active Record, and test
 
 == Bug Reports:
 
-There are none known at this time. Please do contact the author if you uncover any vermin hanging out in the code : a.fenix@icloud.com
+This app is a work in progress, as such it has not been fully tested.  There are none known at this time. Please do contact the author if you uncover any vermin hanging out in the code : a.fenix@icloud.com
 
 == Author:
 <em>Alister A. Fenix, 2015.</em>
