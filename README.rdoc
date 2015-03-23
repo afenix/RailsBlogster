@@ -7,7 +7,7 @@ A simple ruby on rails blogging app. Allows a user to add blog posts and for oth
 
 * Clone or download this repository and cd into blogster directory
 
-<tt> $ rake db:create $ rake db:migrate $ rails server</tt>
+<tt> $ rake db:create $ rake db:migrate $ rails server </tt>
 
 * In your browser visit localhost:3000
 
