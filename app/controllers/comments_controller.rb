@@ -23,11 +23,11 @@ class CommentsController < ApplicationController
   end
 
   def update 
-    @post = Post.find(params[:post_id])
     @comment = Comment.find(params[:id])
+    @post = Post.find(params[:post_id])
     if @comment.update(comment_params)
       flash[:notice] = "Your comment has been edited."
-      redirect_to post_path
+      redirect_to post_path(@post)
     else
       flash[:alert] = "There was a problem."
       redirect_to :back

@@ -1,6 +1,6 @@
 <div class="blocktext">
   <% if @posts.any? %>
-  <h2>Here are your current blog posts:</h2>
+  <h3>Here are your current blog posts:</h3>
     <% @posts.each do |post| %>
       <ul>
       <li class="align"><strong><%= link_to post.title, post_path(post) %></strong> -<%= post.created_at.strftime("%b %d, %Y") %></li>

@@ -1,21 +1,23 @@
-h1 {
+h1, 
+h2,  {
   font-family: 'Righteous', sans-serif;
   text-align: center;
-  color: #DB6C27;
-}
-
-h2 {
-  font-family: 'Righteous', sans-serif;
-  text-align: center;
+  color: #556270;
 }
 
 h3 {
   font-family: 'Righteous', sans-serif;
+  color: #556270;
 }
 
 li.align {
   margin-left: auto;
   margin-right: auto;
+}
+
+li {
+  font-size: 1.2em;
+  color: #556270;
 }
 
 .col-md-6{
@@ -42,5 +44,13 @@ li {
 
 .right-align {
   text-align: right
+}
+
+body { 
+  background: url(../images/sky.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
