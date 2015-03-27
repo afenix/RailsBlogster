@@ -26,3 +26,7 @@ describe "the add a blog process" do
     expect(page).to have_content 'successfully'
   end
 end
+
+
+
+
