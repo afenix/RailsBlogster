@@ -15,6 +15,7 @@ gem 'bootstrap'
 gem "therubyracer"
 gem "less-rails"
 gem "factory_girl_rails"
+gem "devise"
 
 group :development do
   gem 'byebug'
