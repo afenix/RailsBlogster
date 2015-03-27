@@ -11,6 +11,8 @@ A simple ruby on rails blogging app. Allows a user to add blog posts and for oth
 
 * In your browser visit localhost:3000
 
+* On Heroku: https://git.heroku.com/murmuring-shelf-6346.git
+
 == Motivation 
 To practice building an application using Ruby on Rails, Active Record, and testing with Rspec and Capybara.
 

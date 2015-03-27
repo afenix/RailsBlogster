@@ -17,6 +17,10 @@ gem "less-rails"
 gem "factory_girl_rails"
 gem "devise"
 
+group :production do
+  gem 'rails_12factor'
+end
+
 group :development do
   gem 'byebug'
   gem 'web-console'
