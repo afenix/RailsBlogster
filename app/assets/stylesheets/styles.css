@@ -1,18 +1,22 @@
 h1 {
   font-family: 'Righteous', sans-serif;
-  font-size: 300%;
   text-align: center;
   color: #DB6C27;
 }
 
+h2 {
+  font-family: 'Righteous', sans-serif;
+  text-align: center;
+}
 
-h2,
 h3 {
   font-family: 'Righteous', sans-serif;
 }
 
-body{
-  font-family: 'Roboto Slab', serif;}
+li.align {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .col-md-6{
   border: 6px;
@@ -36,4 +40,7 @@ li {
   color: white;
 }
 
+.right-align {
+  text-align: right
+}
 

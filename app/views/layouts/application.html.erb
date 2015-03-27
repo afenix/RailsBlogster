@@ -12,11 +12,10 @@
 <body>
 
   <div class="container">
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-inverse" role="navigation">
       <ul class="nav navbar-nav navbar-left">
         <a class="navbar-brand" href="/">Blogster</a>
       </ul>
-
       <ul class="nav navbar-nav navbar pull-right">
         <% if user_signed_in? %>
         <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
@@ -26,11 +25,10 @@
         <% end %>
       </ul>
     </nav>
-
+   
     <% if user_signed_in? %>
-    <p class="right-align">Logged in as <%= current_user.email %></p>
-    <% end %>
-
+      <p class="right-align">Logged in as <%= current_user.email %></p>
+    <% end %>  
 
     <%= flash[:notice] %>
     <%= flash[:alert] %>

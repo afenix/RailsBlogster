@@ -1,16 +1,18 @@
-<% if @posts.any? %>
-<h4>Here are your current blog posts:</h4>
-  <% @posts.each do |post| %>
-    <ul>
-      <li><%= link_to post.title, post_path(post) %> -<%= post.created_at.strftime("%b %d, %Y") %></li>
-        <ul>
-           <li><%= truncate(post.body, :length => 80) %></li>
-        </ul>  
-    </ul>
+<div class="blocktext">
+  <% if @posts.any? %>
+  <h2>Here are your current blog posts:</h2>
+    <% @posts.each do |post| %>
+      <ul>
+      <li class="align"><strong><%= link_to post.title, post_path(post) %></strong> -<%= post.created_at.strftime("%b %d, %Y") %></li>
+          <ul>
+             <li class="align"><%= truncate(post.body, :length => 80) %></li>
+          </ul>  
+      </ul>
+    <% end %>
   <% end %>
-<% end %>
 
 
-<br />
+  <br />
 
-<%= link_to "Add Post", new_post_path, :class => "btn btn-success" %>
+  <%= link_to "Add Post", new_post_path, :class => "btn btn-success" %>
+</div>

@@ -2,7 +2,7 @@
 
 <%= bootstrap_form_for(@post) do |f| %>
   <%= f.text_field :title %>
-  <%= f.text_area :body, rows: 15 %>
+  <%= f.text_area :body, rows: 5 %>
    <%= f.text_field :author %>
   <%= f.submit "Submit", class: 'btn btn-primary' %>
 <% end %>
