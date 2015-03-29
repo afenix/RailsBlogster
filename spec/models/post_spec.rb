@@ -6,4 +6,6 @@ describe Post do
 	it { should validate_presence_of :author}
 
   it { should have_many :comments }
+  it { should belong_to :user }
+
 end
