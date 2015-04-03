@@ -7,35 +7,41 @@ h2,  {
 
 h3, 
 h4, 
-h5,
-h6,
  {
   font-family: 'Righteous', sans-serif;
   color: #556270;
 }
 
+h5, 
+h6, 
+p, {
+  font-family: 'Voltaire', sans-serif;
+  color: #556270;
+}
+
 li.align {
+  font-family: 'Voltaire', sans-serif;
   margin-left: auto;
   margin-right: auto;
+
 }
 
 li {
   font-size: 1.25em;
   color: #556270;
+  font-family: 'Voltaire', sans-serif;
+  list-style: none;
 }
 
 p, 
 blockquote {
   font-size: 1.25em;
+  font-family: 'Voltaire', sans-serif;
+
 }
 .col-md-6{
   border: 6px;
   border-color: #000;
-}
-
-
-li {
-  list-style: none;
 }
 
 .success {
