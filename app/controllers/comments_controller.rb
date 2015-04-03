@@ -10,7 +10,10 @@ class CommentsController < ApplicationController
     @comment = @post.comments.new(comment_params)
     if @comment.save
       flash[:notice] = "Your comment has been added."
-       redirect_to post_path(@comment.post)
+      respond_to do |format| 
+        format.html { redirect_to post_path(@comment.post) }
+        format.js
+      end
     else 
       flash[:alert] = "Something has gone awry. Try again!"
       redirect_to :back
@@ -20,6 +23,10 @@ class CommentsController < ApplicationController
   def edit
     @post = Post.find(params[:post_id])
     @comment = Comment.find(params[:id])
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   def update 
@@ -27,7 +34,10 @@ class CommentsController < ApplicationController
     @post = Post.find(params[:post_id])
     if @comment.update(comment_params)
       flash[:notice] = "Your comment has been edited."
-      redirect_to post_path(@post)
+      respond_to do |format| 
+        format.html { redirect_to post_path(@comment.post) }
+        format.js
+      end
     else
       flash[:alert] = "There was a problem."
       redirect_to :back
@@ -39,7 +49,10 @@ class CommentsController < ApplicationController
     @comment = Comment.find(params[:id])
     @comment.destroy
     flash[:notice] = "Comment was successfully deleted."
-    redirect_to :back
+    redirect_to do |format|
+      format.html { redirect_to :back }
+      format.js
+    end
   end
 
 private
