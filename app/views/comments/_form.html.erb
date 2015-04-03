@@ -1,8 +1,8 @@
 <%= render "layouts/errors", :object => @comment %>
 
-<%= bootstrap_form_for [@post, @comment] do |f| %>
-  <%= f.text_area :body, rows: 5 %>
-   <%= f.text_field :author %>
+<%= bootstrap_form_for [@post, @comment], remote: true, html: { class: "form-horizontal", style: "display:inline;" } do |f| %>
+  <%= f.text_area :body, rows: 3 %>
+  <%= f.text_field :author %>
   <%= f.submit "Submit", class: 'btn btn-success' %>
 <% end %>
 
