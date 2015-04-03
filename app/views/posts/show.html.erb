@@ -4,7 +4,7 @@
 <h6>Created on <%= @post.created_at.strftime("%b %d, %Y") %></h6>
 
 
-<%= link_to "Edit", edit_post_path(@post), :class => "btn btn-warning btn-xs"%>
+<%= link_to "Edit", edit_post_path(@post), :class => "btn btn-warning btn-xs"%> |
 
 <%= link_to "Delete", post_path(@post), 
                       :data => {:confirm => "Are you absolutely sure? This action can not be undone.", 
@@ -14,24 +14,21 @@
 <br />
 
 <% if @post.comments.any? %>
- <h4>Here are the comments for this post:</h4>
+<h4>Here are the comments for this post:</h4>
   <% @post.comments.each do |comment| %>
-    <ol>
-      <li>
-        <%= comment.body %> ~<em><%= comment.author %></em> |
-        <%= link_to "Edit", edit_post_comment_path(@post, comment) %> |
-        <%= link_to "Delete", post_comment_path(@post, comment),
-                                 :data => {:confirm => "Are you sure?",
-                                                :method => "delete"} %>
-      </li>
+    <ol id="comments">
+     <%= render comment %>
     </ol>
-    <% end %>
+  <% end %>
 <% else %>
   <h6 style="color: grey;"><em>There are no comments for this post, yet.</em></h6>
 <% end %>
 
 <br />
-<p><%= link_to "Add Comment", new_post_comment_path(@post, @comment), :class => 'btn btn-success btn-sm' %> </p>
+
+<br />
+<p><%= link_to "Add Comment", new_post_comment_path(@post, @comment), id: "new_comment_link", remote: true, :class => 'btn btn-success btn-sm' %> </p>
+
 
 <br />
 <p><%= link_to "Back", root_path, :class => 'btn btn-default btn-xs' %></p>
